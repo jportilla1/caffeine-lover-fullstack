@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coffee_shops",
+  "info": {
+    "singularName": "coffee-shop",
+    "pluralName": "coffee-shops",
+    "displayName": "Coffee-Shop",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}
